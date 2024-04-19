@@ -44,4 +44,6 @@ for(int i = 0 ; i < 100 ; i++){
     }
 ```
 
+this program reads out the values from the Sensor 100 times and prints them if the data is in tact
+
 The datasheet advises to give the Sensor about 1 second between each readout, or else it might not be able to keep up.

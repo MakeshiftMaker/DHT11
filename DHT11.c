@@ -2,6 +2,7 @@
 #include <wiringPi.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "DHT11.h"
 
 int* readDHT(int dhtpin){
     int* dht_data = malloc(5*sizeof(int)); // Initialize array to store the data

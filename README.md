@@ -23,7 +23,7 @@ Compile your C file and link against the DHT11 library:
 
 or if it's not located in your project folder
 
-```gcc -I../DHT11 -o plantAutomta plantAutomta.c ../DHT11/DHT11.c```
+```gcc -I../DHT11 -o your_program your_file.c ../DHT11/DHT11.c```
 
 The library comes with the function readDHT(int dhtPin):
 

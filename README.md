@@ -23,7 +23,7 @@ Compile your C file and link against the DHT11 library:
 
 The library comes with the function readDHT(int dhtPin):
 
-the dhtPin being the GPIO pin on your Pi to which youve hooked up your DATA pin on the DHT11.
+the dhtPin being the GPIO pin on your Pi to which youve hooked up your DATA pin on the DHT11. (using the WiringPi GPIO numbering scheme)
 
 The function returns a pointer to an Array which contains Integral and Decimal Humidity/Temperature values and a checksum.
 
@@ -32,6 +32,8 @@ If the checksum doesnt check out, or the program cant read a bit for whatever re
 ## Usage Example
 
 ```
+#define DHTPIN 26
+
 for(int i = 0 ; i < 100 ; i++){
         delay(1000); //delay 1 sec for DHT "cooldown"
         int* dht_data = readDHT(DHTPIN);

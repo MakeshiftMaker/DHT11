@@ -21,6 +21,10 @@ Compile your C file and link against the DHT11 library:
 
 ```gcc -o your_program your_file.c DHT11.c```
 
+or if it's not located in your project folder
+
+```gcc -I../DHT11 -o plantAutomta plantAutomta.c ../DHT11/DHT11.c```
+
 The library comes with the function readDHT(int dhtPin):
 
 the dhtPin being the GPIO pin on your Pi to which youve hooked up your DATA pin on the DHT11. (using the WiringPi GPIO numbering scheme)
